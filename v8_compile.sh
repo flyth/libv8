@@ -64,7 +64,7 @@ fi
 
 if [ "$target_cpu" = "arm64" ]; then
   echo Building CLANG
-  $depot_tools_dir/clang/scripts/build.py --without-android --without-fuchsia \
+  $v8_dir/clang/scripts/build.py --without-android --without-fuchsia \
                                  --host-cc=gcc --host-cxx=g++ \
                                  --gcc-toolchain=/usr \
                                  --use-system-cmake --disable-asserts
